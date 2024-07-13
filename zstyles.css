@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(21, 18, 18);
+    color: rgb(252, 249, 249);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('path/to/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+    
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h1 {
+    font-size: 100px;
+    margin-bottom: 100px;
+}
+
+.members {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.member {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    background-size: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: right;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 254, 254, 0.2);
+}
+
+.name {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.faculty1 {
+    background-image: url("MDsingh\,PresidentFROSH\,EIED.jpg");
+    background-color: black;
+    color: white;
+    background-size: cover;
+}
+
+.faculty2 {
+    background-image: url('Avinash\ Chandra.jpg');
+    background-color: black;
+    color: white;
+    background-size: cover;
+}
+
+.faculty3 {
+    background-image: url('DevenderKumar\,MEE.jpg');
+    background-color: black;
+    color: white;
+    background-size: cover;
+}
+
+.faculty4 {
+    background-image: url('HemduttJoshi\,ECED.jpg');
+    background-color: black;
+    color: white;
+    background-size: cover;
+}
+
+.faculty5 {
+    background-image: url('TarunpreetBhatia\,CSED.jpg');
+      background-color: black;
+      color: white;
+      background-size: cover;
+}
+
+.faculty6 {
+    background-image: url('Vishal\ Gupta.jpg');
+      background-color: black;
+      color: white;
+      background-size: cover;
+}
