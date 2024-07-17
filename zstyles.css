@@ -1,17 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(252, 249, 249);
+    
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Hide scrollbar for all elements */
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg-2.png');
+    background-size: cover;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(21, 18, 18);
-    color: rgb(252, 249, 249);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -
 }
-
+@font-face {
+    font-family:'Nohemi-ExtraBold';
+    src: url(font\ files/Nohemi-ExtraBold);
+}
+.name{
+    font-family: 'Nohemi-ExtraBold', sans-serif;
+}
 body {
-    background: url('path/to/background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
+    font-family: 'Nohemi-ExtraBold', sans-serif;
+    font-weight: bolder;
 }
-
 .container {
     padding: 50px;
     text-align: center;
@@ -24,25 +57,25 @@ body {
 
 .section h1 {
     font-size: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .members {
     display: flex;
     grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    gap: 140px;
     justify-content: center;
-    margin-bottom: 20px; 
+    margin-bottom: 140px; 
 }
 
 .member {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     border-radius: 30px;
     background-size: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: right;
+    text-align: left;
 }
 
 .member:hover {
@@ -51,11 +84,11 @@ body {
 }
 
 .name {
-    position: absolute;
+    text-align: left;
     top: 10px;
     right: 10px;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: transparent;

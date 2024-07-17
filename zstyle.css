@@ -1,22 +1,26 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    color: whitesmoke;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 }
-
-body {
-    background: url('path/to/background-image.jpg') no-repeat center center fixed;
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg-2.png');
     background-size: cover;
 }
-
 .container {
     padding: 50px;
     text-align: center;
 }
-
+h1{
+    color: whie;
+}
 .section {
     margin-bottom: 50px;
 }
@@ -26,11 +30,34 @@ body {
     margin-bottom: 20px;
 }
 
+/* .members {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+} */
 .members {
     display: grid;
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 80px;
+    margin: 150px;
     justify-content: center;
-}
+  }
+  .members1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin: 100px;
+  }
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin: 100px;
+  }
 
 .osc .members {
     display: flex;
@@ -71,35 +98,36 @@ body {
     margin-top: 10px;
     font-size: 25px;
     font-weight: bold;
+    font-family: "Nohemi";
     text-align: left;
     width: 100%;
     background-color:transparent ;
     color: whitesmoke;
     padding: 5px;
     border-radius: 10px;
+    font-family: 'Nohemi-ExtraBold';
 }
 
 .osc1 { background-image: url('Ananya.webp');
     color: white;
     background-size: cover;
-} }
+} 
 .osc2 { background-image: url('Swastik.webp');
     color: white;
     background-size: cover;
-} }
-
+} 
 .core1 { background-image: url('abhaybagla.webp');
     color: white;
     background-size: cover;
-} }
+} 
 .core2 { background-image: url('AnujPathak.webp');
     color: white;
     background-size: cover;
-} }
+} 
 .core3 { background-image: url('anushkatiwari.webp');
     color: white;
     background-size: cover;
-} }
+} 
 .core4 { background-image: url('bhavneetkaur.webp'); 
     color: white;
     background-size: cover;}
